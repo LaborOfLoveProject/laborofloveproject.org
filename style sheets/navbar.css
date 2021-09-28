@@ -1,0 +1,22 @@
+/*div {
+	text-align: right;
+}*/
+.navbar {
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%
+	border-radius: 10px;
+}
+
+.navbar a {
+	font-size: 2vmin;
+	font-weight: bold;
+	font: center;
+	padding: 2vmin 2vmin;
+	text-decoration: none;
+}
+
+/*div.sourceCode {
+	text-align: left;
+}*/

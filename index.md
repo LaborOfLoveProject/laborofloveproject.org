@@ -1,4 +1,5 @@
 % Labor of Love Project
+<img src="./pics/logo/logo.jpg" alt="LOLP Logo">
 
 <div class="navbar">
 [Home](index.html)
@@ -6,11 +7,17 @@
 [Get Involved](get-involved.html)
 [Contact](contact.html)
 
-<div id="container">
-<img src="./pics/test0.jpg" alt="test0" class="center">
-<img src="./pics/test1.jpg" alt="test1" class="center">
-<img src="./pics/test2.jpg" alt="test2" class="center">
+<div class="slideshow">
+<div class="slideshow-image" style="background-image: url('./pics/test0.jpg')"></div>
+<div class="slideshow-image" style="background-image: url('./pics/test1.jpg')"></div>
+<div class="slideshow-image" style="background-image: url('./pics/test2.jpg')"></div>
 </div>
+
+<div id="container">
+<!--<img src='./pics/test0.jpg' alt='test0' class='center'>
+<img src='./pics/test1.jpg' alt='test1' class='center'>
+<img src='./pics/test2.jpg' alt='test2' class='center'>
+</div>-->
 
 <div class = "multi">
 

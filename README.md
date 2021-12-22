@@ -2,7 +2,7 @@
 
 [Pandoc](https://pandoc.org/installing.html) is required for generating the website.
 
-Do **NOT** edit the HTML files. These will be overwritten by the script in scripts/generate.sh. Instead, edit the markdown files in src/
+Do **NOT** edit the HTML files. These will be overwritten by the script in the Makefile. Instead, edit the markdown files in src/
 
 For CSS editing, it will be in style\ sheets/
 

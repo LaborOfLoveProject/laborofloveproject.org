@@ -13,7 +13,8 @@ It is advised that you become familiar with Git, and clone this git repository i
 On top of that, it also allows us to have multiple mirrors of the source code in case anything happens to our server wiping the data.
 
 # LOLP Website TO DO list:
-- Add javascript to:
+- **CSS, CSS, CSS!!**
+- Add javascript to: (File Server will be a locally hosted NextCloud LXC)
 	- Pull images from file server that will display the current fosters
 	- Pull images from file server that will display the current featured foster
 	- Pull images from file server to display the background image/video in a slideshow

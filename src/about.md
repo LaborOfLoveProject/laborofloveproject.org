@@ -1,5 +1,5 @@
 % About
-<img src="../pics/logo/logo.jpg" alt="LOLP Logo">
+<img src="./pics/logo/logo.jpg" alt="LOLP Logo">
 
 [Home](index.html)
 [About](about.html)

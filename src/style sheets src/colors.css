@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-color: #e15e5b;
+}
+
+h1 {
+	color: #355370;
+}
+
+h2 {
+	color: #2c2c42;
+}
+
+h3 {
+	color: #800080;
+}
+
+a {
+	color: #800080;
+}
+
+p {
+	color: #000000;
+}

@@ -1,27 +1,37 @@
 WORKDIR := ../
 CURRDIR := ./
-STYLES := style\ sheets
-STYLESHEETS := --css=$(WORKDIR)$(STYLES)/columns.css --css=$(WORKDIR)$(STYLES)/colors.css --css=$(WORKDIR)$(STYLES)/fonts.css --css=$(WORKDIR)$(STYLES)/photos.css --css=$(WORKDIR)$(STYLES)/navbar.css
+STYLES_SRC := style\ sheets\ src/
+STYLES := style\ sheets\ out/
+MARKDOWN := markdown/
+JAVASCRIPT := javascript/
+STYLESHEETS := --css=$(CURRDIR)$(STYLES)columns.css --css=$(CURRDIR)$(STYLES)colors.css --css=$(CURRDIR)$(STYLES)fonts.css --css=$(CURRDIR)$(STYLES)photos.css --css=$(CURRDIR)$(STYLES)navbar.css
 
 compile:
 
+	# Tailwind generation
+	npx tailwindcss -i $(CURRDIR)$(STYLES_SRC)columns.css -o $(CURRDIR)$(STYLES)columns.css
+	npx tailwindcss -i $(CURRDIR)$(STYLES_SRC)colors.css -o $(CURRDIR)$(STYLES)colors.css
+	npx tailwindcss -i $(CURRDIR)$(STYLES_SRC)fonts.css -o $(CURRDIR)$(STYLES)fonts.css
+	npx tailwindcss -i $(CURRDIR)$(STYLES_SRC)photos.css -o $(CURRDIR)$(STYLES)photos.css
+	npx tailwindcss -i $(CURRDIR)$(STYLES_SRC)navbar.css -o $(CURRDIR)$(STYLES)navbar.css
+
 	# Index
-	pandoc -f markdown -t html5 $(CURRDIR)index.md -o $(WORKDIR)index.html --self-contained $(STYLESHEETS)
+	pandoc -f markdown -t html5 $(CURRDIR)$(MARKDOWN)index.md -o $(WORKDIR)index.html --self-contained $(STYLESHEETS)
 	
 	# About
-	pandoc -f markdown -t html5 $(CURRDIR)about.md -o $(WORKDIR)about.html --self-contained $(STYLESHEETS)
+	pandoc -f markdown -t html5 $(CURRDIR)$(MARKDOWN)about.md -o $(WORKDIR)about.html --self-contained $(STYLESHEETS)
 	
 	# Contact
-	pandoc -f markdown -t html5 $(CURRDIR)contact.md -o $(WORKDIR)contact.html --self-contained $(STYLESHEETS)
+	pandoc -f markdown -t html5 $(CURRDIR)$(MARKDOWN)contact.md -o $(WORKDIR)contact.html --self-contained $(STYLESHEETS)
 	
 	# Donate
-	pandoc -f markdown -t html5 $(CURRDIR)donate.md -o $(WORKDIR)donate.html --self-contained $(STYLESHEETS)
+	pandoc -f markdown -t html5 $(CURRDIR)$(MARKDOWN)donate.md -o $(WORKDIR)donate.html --self-contained $(STYLESHEETS)
 
 	# Featured Foster
-	pandoc -f markdown -t html5 $(CURRDIR)featured-foster.md -o $(WORKDIR)featured-foster.html --self-contained $(STYLESHEETS)
+	pandoc -f markdown -t html5 $(CURRDIR)$(MARKDOWN)featured-foster.md -o $(WORKDIR)featured-foster.html --self-contained $(STYLESHEETS)
 	
 	# Get-Involved
-	pandoc -f markdown -t html5 $(CURRDIR)get-involved.md -o $(WORKDIR)get-involved.html --self-contained $(STYLESHEETS)
+	pandoc -f markdown -t html5 $(CURRDIR)$(MARKDOWN)get-involved.md -o $(WORKDIR)get-involved.html --self-contained $(STYLESHEETS)
 
 	# Current Fosters
-	pandoc -f markdown -t html5 $(CURRDIR)current-fosters.md -o $(WORKDIR)current-fosters.html --self-contained $(STYLESHEETS)
+	pandoc -f markdown -t html5 $(CURRDIR)$(MARKDOWN)current-fosters.md -o $(WORKDIR)current-fosters.html --self-contained $(STYLESHEETS)

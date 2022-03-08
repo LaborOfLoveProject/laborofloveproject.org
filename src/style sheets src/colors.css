@@ -4,25 +4,25 @@
 @tailwind utilities;
 
 body {
-	background-color: #e15e5b;
+	background-color: vinta-salmon;
 }
 
 h1 {
-	color: #355370;
+	color: vinta.ice;
 }
 
 h2 {
-	color: #2c2c42;
+	color: vinta.navy;
 }
 
 h3 {
-	color: #800080;
+	color: purple;
 }
 
 a {
-	color: #800080;
+	color: purple;
 }
 
 p {
-	color: #000000;
+	color: purple;
 }

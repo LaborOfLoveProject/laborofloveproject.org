@@ -18,7 +18,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Graphik, sans-serif;
   /* 4 */
 }
 
@@ -471,25 +471,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body {
-  background-color: #e15e5b;
+  background-color: vinta-salmon;
 }
 
 h1 {
-  color: #355370;
+  color: vinta.ice;
 }
 
 h2 {
-  color: #2c2c42;
+  color: vinta.navy;
 }
 
 h3 {
-  color: #800080;
+  color: purple;
 }
 
 a {
-  color: #800080;
+  color: purple;
 }
 
 p {
-  color: #000000;
+  color: purple;
 }

@@ -6,136 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Labor of Love Project</title>
   <style>
-    html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      word-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
-      body {
-        font-size: 0.9em;
-        padding: 1em;
-      }
-    }
-    @media print {
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
-      }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
-      }
-      h2, h3, h4 {
-        page-break-after: avoid;
-      }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      font-size: 85%;
-      margin: 0;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     span.underline{text-decoration: underline;}
@@ -144,6 +14,11 @@
     ul.task-list{list-style: none;}
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
+  <link rel="stylesheet" href="data:text/css,%40charset%20%22UTF%2D8%22%3B%0A%2Emulti%20%7B%0A%0A%2Dwebkit%2Dcolumn%2Dcount%3A%203%3B%0A%2Dmoz%2Dcolumn%2Dcount%3A%203%3B%0Acolumn%2Dcount%3A%203%3B%0A%0A%2Dwebkit%2Dcolumn%2Dgap%3A%2040px%3B%0A%2Dmoz%2Dcolumn%2Dgap%3A%2040px%3B%0Acolumn%2Dgap%3A%2040px%3B%0A%0A%2Dwebkit%2Dcolumn%2Drule%2Dstyle%3A%20solid%3B%0A%2Dmoz%2Dcolumn%2Drule%2Dstyle%3A%20solid%3B%0Acolumn%2Drule%2Dstyle%3A%20solid%3B%0A%7D%0A" />
+  <link rel="stylesheet" href="data:text/css,%40charset%20%22UTF%2D8%22%3B%0Abody%20%7B%0Abackground%2Dcolor%3A%20%23e15e5b%3B%0A%7D%0Ah1%20%7B%0Acolor%3A%20%23355370%3B%0A%7D%0Ah2%20%7B%0Acolor%3A%20%232c2c42%3B%0A%7D%0Ah3%20%7B%0Acolor%3A%20%23800080%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%23800080%3B%0A%7D%0Ap%20%7B%0Acolor%3A%20%23000000%3B%0A%7D%0A" />
+  <link rel="stylesheet" href="data:text/css,%0Ah1%20%7B%0Afont%2Dfamily%3A%20%27Computer%20Modern%27%2C%20bold%3B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Ah2%20%7B%0Afont%2Dfamily%3A%20%27Computer%20Modern%27%3B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Ah3%20%7B%0Afont%2Dfamily%3A%20%27Computer%20Modern%27%3B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aa%20%7B%0Afont%2Dfamily%3A%20%27Computer%20Modern%27%3B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A" />
+  <link rel="stylesheet" href="data:text/css,%0A%2Eslideshow%20%7B%0Aposition%3A%20absolute%3B%0Awidth%3A%20100vw%3B%0Aheight%3A%20100vh%3B%0Aoverflow%3A%20hidden%3B%0A%7D%0A%2Eslideshow%2Dimage%20%7B%0Aposition%3A%20absolute%3B%0Awidth%3A%20100%25%3B%0Aheight%3A%20100%25%3B%0Abackground%3A%20no%2Drepeat%2050%25%2050%25%3B%0Abackground%2Dsize%3A%20cover%3B%0A%2Dmoz%2Danimation%2Dname%3A%20kenburns%3B%0A%2Dwebkit%2Danimation%2Dname%3A%20kenburns%3B%0Aanimation%2Dname%3A%20kenburns%3B%0A%2Dmoz%2Danimation%2Dtiming%2Dfunction%3A%20linear%3B%0A%2Dwebkit%2Danimation%2Dtiming%2Dfunction%3A%20linear%3B%0Aanimation%2Dtiming%2Dfunction%3A%20linear%3B%0A%2Dmoz%2Danimation%2Diteration%2Dcount%3A%20infinite%3B%0A%2Dwebkit%2Danimation%2Diteration%2Dcount%3A%20infinite%3B%0Aanimation%2Dtiming%2Dfunction%3A%20infinite%3B%0A%2Dmoz%2Danimation%2Dduration%3A%2016s%3B%0A%2Dwebkit%2Danimation%2Dduration%3A%2016s%3B%0Aanimation%2Dduration%3A%2016s%3B%0Aopacity%3A%201%3B%0A%2Dmoz%2Dtransform%3A%20scale%281%2E2%29%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%2E2%29%3B%0Atransform%3A%20scale%281%2E2%29%3B%0A%7D%0A%2Eslideshow%2Dimage%3Anth%2Dchild%281%29%20%7B%0A%2Dmoz%2Danimation%2Dname%3A%20kenburns%2D5%3B%0A%2Dwebkit%2Danimation%2Dname%3A%20kenburns%2D5%3B%0Aanimation%2Dname%3A%20kenburns%2D5%3B%0Az%2Dindex%3A%202%3B%0A%7D%0A%2Eslideshow%2Dimage%3Anth%2Dchild%282%29%20%7B%0A%2Dmoz%2Danimation%2Dname%3A%20kenburns%2D5%3B%0A%2Dwebkit%2Danimation%2Dname%3A%20kenburns%2D5%3B%0Aanimation%2Dname%3A%20kenburns%2D5%3B%0Az%2Dindex%3A%201%3B%0A%7D%0A%2Eslideshow%2Dimage%3Anth%2Dchild%283%29%20%7B%0A%2Dmoz%2Danimation%2Dname%3A%20kenburns%2D5%3B%0A%2Dwebkit%2Danimation%2Dname%3A%20kenburns%2D5%3B%0Aanimation%2Dname%3A%20kenburns%2D5%3B%0Az%2Dindex%3A%200%3B%0A%7D%0A%40%2Dwebkit%2Dkeyframes%20kenburns%2D1%20%7B%0A0%25%20%7B%0Aopacity%3A%201%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%2E2%29%3B%0Atransform%3A%20scale%281%2E2%29%3B%0A%7D%0A1%2E5625%25%20%7B%0Aopacity%3A%201%3B%0A%7D%0A23%2E4375%25%20%7B%0Aopacity%3A%201%3B%0A%7D%0A26%2E5625%25%20%7B%0Aopacity%3A%200%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%29%3B%0Atransform%3A%20scale%281%29%3B%0A%7D%0A100%25%20%7B%0Aopacity%3A%200%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%2E2%29%3B%0Atransform%3A%20scale%281%2E2%29%3B%0A%7D%0A98%2E4375%25%20%7B%0Aopacity%3A%200%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%2E21176%29%3B%0Atransform%3A%20scale%281%2E21176%29%3B%0A%7D%0A100%25%20%7B%0Aopacity%3A%201%3B%0A%7D%0A%7D%0A%40keyframes%20kenburns%2D1%20%7B%0A0%25%20%7B%0Aopacity%3A%201%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%2E2%29%3B%0Atransform%3A%20scale%281%2E2%29%3B%0A%7D%0A1%2E5625%25%20%7B%0Aopacity%3A%201%3B%0A%7D%0A23%2E4325%25%20%7B%0Aopacity%3A%201%3B%0A%7D%0A26%2E5625%25%20%7B%0Aopacity%3A%200%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%29%3B%0Atransform%3A%20scale%281%29%3B%0A%7D%0A100%25%20%7B%0Aopacity%3A%200%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%2E2%29%3B%0Atransform%3A%20scale%281%2E2%29%3B%0A%7D%0A98%2E4375%25%20%7B%0Aopacity%3A%200%3B%0A%2Dwebkit%2Dtransform%3A%20scale%281%2E21176%29%3B%0Atransform%3A%20scale%281%2E21176%29%3B%0A%7D%0A100%25%20%7B%0Aopacity%3A%201%3B%0A%7D%0A%7D%0A%40%2Dwebkit%2Dkeyframes%0A%0A%0A%0A" />
+  <link rel="stylesheet" href="data:text/css,%0A%2Enavbar%20%7B%0Aoverflow%3A%20hidden%3B%0Amargin%2Dleft%3A%20auto%3B%0Amargin%2Dright%3A%20auto%3B%0Awidth%3A%2098%25%0Aborder%2Dradius%3A%2010px%3B%0A%7D%0A%2Enavbar%20a%20%7B%0Afont%2Dsize%3A%202vmin%3B%0Afont%2Dweight%3A%20bold%3B%0Afont%3A%20center%3B%0Apadding%3A%202vmin%202vmin%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0A%0A" />
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->

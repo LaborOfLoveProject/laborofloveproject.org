@@ -1,5 +1,5 @@
 % Labor of Love Project
-<img src="./pics/logo/logo.jpg" alt="LOLP Logo">
+<img src="../pics/logo/logo.jpg" alt="LOLP Logo">
 
 <div class="navbar">
 [Home](index.html)

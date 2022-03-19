@@ -10,7 +10,7 @@ module.exports = {
 		colors: {
 			'vinta-salmon': '#e15e5b',
 			'vinta-blue': {
-				ice: '#355370',
+				ice: '#355c7d',
 				navy: '#2c2c42',
 			},
 		},

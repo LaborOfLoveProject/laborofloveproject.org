@@ -1,25 +1,19 @@
 % Labor of Love Project
-<img src="../pics/logo/logo.jpg" alt="LOLP Logo">
-
 <div class="navbar">
 [Home](index.html)
 [About](about.html)
 [Get Involved](get-involved.html)
 [Contact](contact.html)
 
-<div class="slideshow">
-<div class="slideshow-image" style="background-image: url('./pics/test0.jpg')"></div>
-<div class="slideshow-image" style="background-image: url('./pics/test1.jpg')"></div>
-<div class="slideshow-image" style="background-image: url('./pics/test2.jpg')"></div>
-</div>
+# Major Work in Progress
+This website is currently heavily under active development. Please note that this website is not going to look decent for a while until we hammer down on the CSS and Javascript. As far as the CSS goes, we are looking into incorporating [Tailwind CSS](https://tailwindcss.com/) for a professional, and modern looking website.
 
-<div id="container">
-<!--<img src='./pics/test0.jpg' alt='test0' class='center'>
-<img src='./pics/test1.jpg' alt='test1' class='center'>
-<img src='./pics/test2.jpg' alt='test2' class='center'>
-</div>-->
+Our plans are to incorporate photos and videos from our [nextcloud](https://nextcloud.laborofloveproject.org) sub-site to dynamically update to display our current and new fosters and rescues.
 
-<div class = "multi">
+Additionally, we plan on incorporating [ONVIF](https://en.wikipedia.org/wiki/ONVIF) streams for our boarded animals, as well as incorporating sensors to smart-switch our cameras (when purchased) so those boarding will be able to see their animals at all time, including in pitch-black darkness with the IR LED's.
+
+We are commited to being 100% open source, and you will be able to view our source code at our [Github](https://github.com/LaborOfLoveProject)
+
 
 ### [Donate](donate.html)
 Rescue is difficult and it never ends. Help us help animals in need
@@ -39,4 +33,3 @@ rescue groups all over the nation. However, we do always have some
 animals that are available for local adoption. We like to highlight them
 here so you can fall in love with them as we have!
 
-</div>

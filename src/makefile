@@ -1,7 +1,8 @@
 WORKDIR := ../
 CURRDIR := ./
 STYLES_SRC := style\ sheets\ src/
-STYLES := style\ sheets\ out/
+#STYLES := style\ sheets\ out/
+STYLES := $(STYLES_SRC)#TEMP
 MARKDOWN := markdown/
 JAVASCRIPT := javascript/
 STYLESHEETS := --css=$(CURRDIR)$(STYLES)columns.css --css=$(CURRDIR)$(STYLES)colors.css --css=$(CURRDIR)$(STYLES)fonts.css --css=$(CURRDIR)$(STYLES)photos.css --css=$(CURRDIR)$(STYLES)navbar.css
@@ -9,11 +10,11 @@ STYLESHEETS := --css=$(CURRDIR)$(STYLES)columns.css --css=$(CURRDIR)$(STYLES)col
 compile:
 
 	# Tailwind generation
-	npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)columns.css -o $(CURRDIR)$(STYLES)columns.css
-	npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)colors.css -o $(CURRDIR)$(STYLES)colors.css
-	npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)fonts.css -o $(CURRDIR)$(STYLES)fonts.css
-	npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)photos.css -o $(CURRDIR)$(STYLES)photos.css
-	npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)navbar.css -o $(CURRDIR)$(STYLES)navbar.css
+	#npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)columns.css -o $(CURRDIR)$(STYLES)columns.css
+	#npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)colors.css -o $(CURRDIR)$(STYLES)colors.css
+	#npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)fonts.css -o $(CURRDIR)$(STYLES)fonts.css
+	#npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)photos.css -o $(CURRDIR)$(STYLES)photos.css
+	#npx tailwindcss -c $(CURRDIR)$(JAVASCRIPT)tailwind.config.js -i $(CURRDIR)$(STYLES_SRC)navbar.css -o $(CURRDIR)$(STYLES)navbar.css
 
 	# Index
 	pandoc -f markdown -t html5 $(CURRDIR)$(MARKDOWN)index.md -o $(WORKDIR)index.html --self-contained $(STYLESHEETS)
